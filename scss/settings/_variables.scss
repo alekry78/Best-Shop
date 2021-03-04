@@ -1,6 +1,6 @@
-$color-primary: #08A6E4;
-$color-primary-shadow: rgba(7, 172, 230, .16);
-$color-redish: #FB3B64;
+$color-blue: #08A6E4;
+$color-blue-shadow: rgba(7, 172, 230, .16);
+$color-reddish: #FB3B64;
 $color-green: #55DFB4;
 $color-black: #000000;
 $color-white: #ffffff;
@@ -9,9 +9,25 @@ $color-light-grey: #F7F7F7;
 $button-radius: 35px;
 $font-raleway: "Raleway", sans-serif;
 $font-open-sans: "Open Sans", sans-serif;
-@mixin hamburger-line{
+@mixin flex-row{
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@mixin flex-column{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+@mixin font($size,$family,$weight){
+  font-size:$size;
+  font-weight:$weight;
+  font-family:$family;
+}
+@mixin ham-line{
   width:100%;
   height:3px;
+  background-color:$color-blue;
   position:absolute;
-  background-color:$color-primary;
 }

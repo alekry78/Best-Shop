@@ -14,13 +14,21 @@ h2 {
   font-family: $font-raleway;
   font-size: 2.25rem;
 }
+
 .container {
   width: 1352px;
   margin: 0 auto;
-}
-@media (max-width:1352px){
-  .container{
-    width:100%;
-    padding:0 15px;
+
+  @include notebook {
+    width: 100%;
+    padding: 0 15px;
   }
+}
+
+
+.logo {
+  font-family: $font-raleway;
+  font-size: 2rem;
+  font-weight: 300;
+  color: $color-primary;
 }
